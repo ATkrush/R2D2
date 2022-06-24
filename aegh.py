@@ -14,11 +14,11 @@ while 1:
     print(cpu.temperature)
     time.sleep(1)
 
-    if (cpu.temperature > 45):
+    if (cpu.temperature > 46.01):
         ledred.on()
         ledblue.off()
 
-    else:
+    if(cpu.temperature < 46):
         ledred.off()
         ledblue.on()
 
